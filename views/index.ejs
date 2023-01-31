@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style1.css">
+    </head>
+<body>
+    <div class="box">
+        <h1 class="heading"><%= CurrentDay %></h1>
+        <h1 class="heading">Time- <span id="time">  </span></h1>
+        <h1 class="heading">Practice Test 5 Result</h1>
+        </div>
+        <div class="box">
+        <p class="item">Name: <%= name %></p>
+        <p class="item">DOB: <%= dob %></p>
+        <p class="item">Marks: <%= marks %></p>
+        <p class="item">Percentage of Marks Obtained: <%= percent %></p>
+        <p class="item">Rank: <%= rank %></p>
+        <form action="/answerscript" method="post">
+        <button type="submit">Click here to view your answer script</button>
+    </form>
+      </div>
+</body>
+</html>
